@@ -8,10 +8,11 @@ if (isset($_GET['id'])) {
   $select = $conn->query("DELETE FROM `create_task` WHERE `id`= $id");
 
   if ($select === TRUE) {
-    echo json_encode(array("message" => "Task deleted successfully"));
+    $response = ["message" => "Task deleted successfully"];
   } else {
-    echo json_encode(array("error" => $conn->error));
+    $response = ["error" => $conn->error];
   }
+  echo json_encode($response);
 }
 
 ?>
