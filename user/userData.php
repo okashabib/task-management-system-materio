@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $existing_username_result = mysqli_query($conn, $existing_username_query);
 
   if (mysqli_num_rows($existing_username_result) > 0) {
-    echo json_encode(array('error' => 'Username already exists. Please choose a different one!'));
+    $response['error'] = "Username already exists. Please choose a different one!";
   } else {
 
     if (empty($id)) {

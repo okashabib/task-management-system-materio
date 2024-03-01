@@ -170,7 +170,12 @@
       });
     });
 
+    function changeTitle(title) {
+      document.getElementById('staticBackdropLabel').innerText = title
+    }
+
     function editRow(id) {
+      changeTitle('Update User');
       $.ajax({
         method: 'GET',
         url: './getUser.php',
@@ -239,6 +244,7 @@
     $('#staticBackdrop').on('hidden.bs.modal', function () {
       $('#userForm')[0].reset();
       $('#userId').val('');
+      changeTitle('Create User')
     });
 
   </script>
