@@ -5,7 +5,8 @@
       <a href="../dashboard/index.php" class="app-brand-link">
         <span class="app-brand-logo demo">
           <span style="color: var(--bs-primary)">
-            <i class="menu-icon tf-icons mdi mdi-incognito mdi-36px"></i>
+            <!-- <i class="menu-icon tf-icons mdi mdi-incognito mdi-36px"></i> -->
+            <img src="../assets/img/icons/tms.webp" width="40" alt="">
           </span>
         </span>
         <span class="app-brand-text demo menu-text fw-semibold ms-2">TMS.</span>

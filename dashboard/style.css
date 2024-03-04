@@ -38,3 +38,13 @@ a:hover {
   background: #804BE0;
   border-radius: 10px;
 }
+
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background: #804BE0;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: #804BE0;
+}
